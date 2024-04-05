@@ -1,0 +1,222 @@
+ *,*::before , *::after{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+}
+.header-h1{
+    font-weight:bold;
+    color:red;
+    text-align:center;
+    font-family: monospace;
+}
+span{
+    font-weight:bold;
+    display:block;
+    text-align:center;
+}
+header{
+    background-color: hsl(210, 67%, 98%);
+    border-bottom: 3px solid white;
+}
+img{
+    display:block;
+    width:50px;
+    height:50px;
+    position:absolute;
+    margin-bottom: 45px;
+}
+.custom-nav{
+    background-color: grey;
+    width:100%;
+    height:6rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.custom-nav li a{
+    color:hsl(0, 0%, 100%);
+    margin-top:10px;
+    margin-bottom:-40px;
+}
+.custom-nav li a:hover{
+    border-radius: 20px;
+    background-color: hsl(0, 93%, 50%);
+    color:black;
+    text-align:center;
+    position:relative;
+}
+.image-container{
+    background-image: url(RestaurantImages/foodWebsiteImg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    width:100%;
+    height:30vw;
+    top:0px;
+    left:0px;
+    opacity: 0.79;
+    border: 2px solid black;
+    border-bottom-left-radius: 100px;
+}
+.container-text{
+    font-weight: bold;
+    color:black;
+    text-align:center;
+}
+.container-btn{
+    text-transform:uppercase;
+    border:none;
+    font-weight:bold;
+    border-radius: 15px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    background-color: hsl(60, 83%, 49%);
+    padding:5px;
+    text-align: center;
+}
+.container-btn:hover{
+    background-color:red;
+}
+.col1{
+    background-image: url(RestaurantImages/restaurntChiefImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    border-radius: 40px;
+    width: 200px;
+    height:100px;
+    position: absolute;
+    margin-top:200px;
+    margin-left:-260px;
+    box-shadow: 2px 7px 16px 19px;
+}
+.col2{
+    background-image: url(RestaurantImages/foodWebsiteImg2.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:200px;
+    height:100px;
+    position:absolute;
+    border-radius: 40px;
+    margin-top:200px;
+    margin-right:-260px;
+    box-shadow: 2px 7px 16px 19px;
+    overflow: hidden;
+}
+.priceBtn , .specialBtn{
+    border:none;
+    border-radius:20px;
+    border: 3px solid white;
+    width:90px;
+    margin-top:60px;
+    margin-left:50px;
+    font-family: monospace;
+    background-color:hsl(60, 100%, 62%);
+    font-weight:bold;
+    overflow: hidden;
+    font-size: 20px;
+}
+.priceBtn:hover , .specialBtn:hover{
+    cursor:pointer;
+    background-color:red;
+}
+
+.col-image{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height:300px;
+    width:350px;
+    margin-top:30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.mainFoodBtn{
+    border:none;
+    border-radius: 15px;
+    font-family:monospace;
+    font-size:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(60, 100%, 58%);
+    border:2px solid white;
+    padding-right:10px;
+    margin-top:12rem;
+    margin-right:50px;
+    /* margin-left:7rem;  */
+  }
+.mainFoodBtn:hover{
+    background-color: red;
+}
+footer{
+    text-align:center;
+    margin-top:20px;
+}
+ /* consequently, above entirely sophisisticed process is comprised for laptop  */
+
+/* marked down as  phone device */
+@media screen and (max-width:575px){
+    .image-container{
+        height:200px;
+    }
+    .col-image{
+        margin:10px auto;
+    }
+    .col-image1 , .col-image2 , .col-image3{
+        width:400px;
+        height:400px;
+    }
+    .col1 , .col2{
+        width:150px;
+        height:100px;
+        background-position-y:center;
+        /* position:absolute; */
+        margin-top:100px;
+    }
+    .container-btn{
+        display:none;
+    }
+    .priceBtn , .specialBtn{
+        margin-top:40px;
+        position:relative;
+       margin-left:20px;
+    }
+    .mainFoodBtn{
+        margin-bottom:100px;
+    }
+}
+
+ /** pinted out as tablet */
+@media screen and (min-width: 576px) and (max-width: 991px){
+    .col-image1{ 
+        width:300px;
+        height:300px;
+    }
+    .col-image2{
+        width:300px;
+        height:300px;
+        margin-left:100px;
+    }
+    .col-image3{
+        margin-top:22rem;
+        margin-left:-32rem;
+        width:700px;
+        height:300px;
+    }
+    .col1 , .col2{
+        margin-top:100px;
+    }
+    .mainFoodBtn{
+        margin-bottom:100px;
+        margin-left:50px;
+    }
+}
